@@ -25,18 +25,23 @@
                     <div class="card-header">
                         <h4> Add A Product</h4>
                     </div>
-                    <form id="product-form" class="card-body"></form>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product Name" class="form-control">
+                        </div><br>
+                        <div class="form-group">
+                            <input type="number" step="0.01" id="price" placeholder="Product Price" class="form-control">
+                        </div><br>
+                        <div class="form-group">
+                            <input type="number" id="year" min="1900" value="2000" placeholder="Year Product" class="form-control">
+                        </div><br>
+                        <input type="submit" value="Save" class="btn btn-primary btn-block">
+                    </form>
                 </div>
             </div>
-
-            <div class="col-md-8">
-                
-            </div>
-
+            <div id="product-list" class="col-md-8"></div>
         </div>
-
     </div>
-
-
+    <script src="App.js"></script>
 </body>
 </html>
